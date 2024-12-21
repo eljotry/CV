@@ -41,9 +41,14 @@ const MyWorks = () => {
       <h2 className="text-3xl md:text-4xl font-bold mb-6">My works</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         {projects.map((project, index) => (
-          <div key={index} className="p-4 flex flex-col md:flex-row items-center h-auto rounded-lg border border-black">
+          <div
+            key={index}
+            className="p-4 flex flex-col md:flex-row items-center h-auto rounded-lg border border-black"
+          >
             <div className="flex-1 pr-0 md:pr-4">
-              <h3 className="text-lg md:text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                {project.title}
+              </h3>
               <p className="mb-2">{project.description}</p>
               <p className="mb-2">
                 <strong>Technologies:</strong> {project.technologies.join(", ")}
